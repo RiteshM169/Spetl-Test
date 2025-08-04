@@ -242,4 +242,7 @@ app_license = "mit"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
-fixtures = ["Kanban Board"]
+after_migrate = [
+    "spetl_custom.scripts.create_additional_kanban_boards"    # this one
+]
+
